@@ -12,3 +12,6 @@ print(compra)
 #C.Sustituye "leche" por "avena".
 compra[1]="avena"
 print(compra)
+
+
+#EJERCICIO 2:
