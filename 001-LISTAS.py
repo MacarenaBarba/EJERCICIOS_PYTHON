@@ -54,4 +54,41 @@ Crea un bucle for que recorra la lista y multiplique cada número por 10.
 Imprime el resultado de cada operación."""
 numeros=[1,3,3,4,5]
 for i in numeros:
+    print(f"El resultado de la multiplicación de {i} y 10 es:")
     print(i*10)
+
+    
+#------------------------------------------------------------------
+"""Ejercicio 5: Buscador de Colores
+Crea una lista con 5 colores.
+
+Pide al usuario que escriba un color por teclado (input).
+
+Dile si ese color está en tu lista o no (pista: usa el operador in)."""
+colores=["azul","verde","naranja","amarillo","salmón"]
+dato= input("El color introducido es:").lower()
+
+if dato in colores: 
+    print(f"El color {dato} se encuentra en la lista de colores")
+else:
+    print(f"El color {dato} NO se encuentra en la lista de colores")
+#---------------------------------------------------------------------
+
+"""Ejercicio 6: El Filtro de Seguridad
+Tienes una lista de nombres: invitados = ["Ana", "Francisco", "Luis", "Marta", "Ian", "Beatriz"].
+
+Reto: Crea una nueva lista que contenga solo los nombres que tengan 5 letras o más. Imprime la lista resultante."""
+#lista invitados:
+invitados = ["Ana", "Francisco", "Luis", "Marta", "Ian", "Beatriz"]
+
+#Crear una lista con todos los nombres que tengan 5 letras o más:
+invitados_5=len(invitados)
+nombre5=[]
+
+for i in invitados:
+    if len(i)>=5:
+        nombre5.append(i)
+    else:
+        print(f"{i} no esta en la lista de los nombres largos")
+
+print(nombre5)
