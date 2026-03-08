@@ -119,7 +119,7 @@ count_45=ventas.count(45.00)
 print(count_45)
 
 #--------------------------------------------------------------------------------
-"""Ejercicio 7: Limpieza de Inventario
+"""Ejercicio 8: Limpieza de Inventario
 Tienes una lista con productos duplicados debido a un error en la base de datos:
 stock = ["ratón", "teclado", "monitor", "ratón", "antena", "teclado", "teclado"]
 
@@ -132,3 +132,61 @@ for i in stock:
     if i  not in listaSinDuplicados:
         listaSinDuplicados.append(i)
 print(listaSinDuplicados)
+
+#----------------------------------------------------------------
+"""Ejercicio 9: El Inversor de Frases
+Crea un programa que pida una frase al usuario y la devuelva escrita exactamente al revés (palabra por palabra).
+
+Ejemplo: Si escribo "Aprender Python es genial", el programa debe devolver "genial es Python Aprender"."""
+frase="Aprender Python es genial"
+listaFrase=frase.split()  
+listaFraseReverse=listaFrase[::-1]
+fraseReverse=" ".join(listaFraseReverse)
+print(fraseReverse)
+
+#-------------------------------------------------------------------
+"""Ejercicio 10: El Validador de Listas
+Crea dos listas:
+lista_a = [1, 2, 3, 4, 5]
+lista_b = [4, 5, 6, 7, 8]
+
+Reto: Crea una tercera lista llamada comunes que contenga únicamente los números que aparecen en ambas listas."""
+
+lista_a = [1, 2, 3, 4, 5]
+lista_b = [4, 5, 6, 7, 8]
+
+lista_c=[]
+
+for i in lista_a:
+    if i in lista_b:
+        lista_c.append(i)
+print(lista_c)       
+
+#----------------------------------------------------------------------
+"""Ejercicio 11: verificar si una lista está vacía"""
+listaVacia=[]
+
+if len(listaVacia)==0:
+        print("La lista está vacía")
+else:
+        print("La lista NO está vacía")
+#-----------------------------------------------------------------------
+#Ejercicio 10: crear una lista con los cuadrados de los números del 1 al 10.
+listaCuadrados= []
+for i in range(1,11):
+     listaCuadrados.append(i**2)
+print(f"la lista nueva es {listaCuadrados}")
+
+#------------------------------------------------------------------------
+#Genera una listado todos los números pares entre 0 y 50.
+numerosPares=[]
+for i in range(0,51):
+     if i%2==0:
+          numerosPares.append(i)
+print(f"La lista de número pares es:{numerosPares}") 
+
+#------------------------------------------------------------------------
+#Completa la llamada a filter() en el editor de manera que el único lenguaje que se imprima de la lista sea "Python".
+listaLenguajes=["Python","SQL", "JavaScript"]
+python=filter(lambda x: x=="Python",listaLenguajes)
+print(list(python))  
