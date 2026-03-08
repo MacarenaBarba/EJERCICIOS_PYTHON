@@ -82,7 +82,7 @@ Reto: Crea una nueva lista que contenga solo los nombres que tengan 5 letras o m
 invitados = ["Ana", "Francisco", "Luis", "Marta", "Ian", "Beatriz"]
 
 #Crear una lista con todos los nombres que tengan 5 letras o más:
-invitados_5=len(invitados)
+
 nombre5=[]
 
 for i in invitados:
@@ -92,3 +92,43 @@ for i in invitados:
         print(f"{i} no esta en la lista de los nombres largos")
 
 print(nombre5)
+
+
+"""Ejercicio 7: El Analista de Datos
+Dada la siguiente lista de ventas: ventas = [120.50, 45.00, 700.10, 80.30, 150.00, 45.00]."""
+
+#a.Calcula y muestra la suma total de las ventas.
+ventas = [120.50, 45.00, 700.10, 80.30, 150.00, 45.00]
+suma_total=sum(ventas)
+print(suma_total)
+
+#b.Muestra cuál fue la venta más alta y cuál la más baja.
+ventas.sort()
+ventaBaja=ventas[0]
+print(f"{ventaBaja} es la venta más baja.")
+
+ventas.sort(reverse=True)
+ventasAlta=ventas[0]
+print(f"{ventasAlta} es la venta más alta.")
+#c.Calcula el promedio de ventas.
+promedioVentas=sum(ventas)/len(ventas)
+print(f"El promedio es:{promedioVentas}")
+
+#d.Muestra cuántas veces se repite la venta de 45.00.
+count_45=ventas.count(45.00)
+print(count_45)
+
+#--------------------------------------------------------------------------------
+"""Ejercicio 7: Limpieza de Inventario
+Tienes una lista con productos duplicados debido a un error en la base de datos:
+stock = ["ratón", "teclado", "monitor", "ratón", "antena", "teclado", "teclado"]
+
+Reto: Consigue una nueva lista donde cada producto aparezca una sola vez."""
+
+stock = ["ratón", "teclado", "monitor", "ratón", "antena", "teclado", "teclado"]
+listaSinDuplicados=[]
+
+for i in stock:
+    if i  not in listaSinDuplicados:
+        listaSinDuplicados.append(i)
+print(listaSinDuplicados)
