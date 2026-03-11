@@ -47,3 +47,36 @@ c=np.array([[1,5,3],[1,2,56],[8,4,7]])  #2D
 
 #Slicings:
 #c[0:1,2:3]
+#-----------------------------------------------------------------------------------
+
+#OPERACIONES NUMERICAS:
+array1=np.array([1,2,3])
+array2=np.array([4,5,6])
+
+print("la suma de las dos es:")
+print(array1+array2)
+
+print("la resta de ambas es:")
+print(array1-array2)
+
+print("la multiplicación es:")
+print(array1*array2)
+
+print("la raíz cuadrada es:")
+print(np.sqrt(array1))
+
+#---------------------------------------------------------------------
+#AGREGACIONES:
+x=np.array([1,2,3,4,5])
+
+#A.SUMA DEL ARRAY:
+print("la suma del conjunto del array es:")
+print(x.sum())    #.sum()
+
+#B.LA MEDIA DEL ARRAY:
+print("la media del array es:")  #.mean()
+print(x.mean())
+
+#C.LA DESVIACIÓN ESTÁNDAR.
+print("la desviación estándar es:")   #.std()
+print(x.std())
