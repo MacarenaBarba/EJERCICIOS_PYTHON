@@ -79,4 +79,4 @@ print(x.mean())
 
 #C.LA DESVIACIÓN ESTÁNDAR.
 print("la desviación estándar es:")   #.std()
-print(x.std())
+print(x.std())    #cuanto se alejan los datos de la media.
